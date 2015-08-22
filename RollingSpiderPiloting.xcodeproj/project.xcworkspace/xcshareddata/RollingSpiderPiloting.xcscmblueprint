@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D131187164D7F965C8F39A89419DCD9D03E1E606",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E6C1EFC0B639D55313D78A7AFA3D09D623C45EE3" : 0,
+    "D131187164D7F965C8F39A89419DCD9D03E1E606" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C77E5A3B-341A-4616-9315-24747DE197EE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E6C1EFC0B639D55313D78A7AFA3D09D623C45EE3" : "ARSDKBuildUtils\/",
+    "D131187164D7F965C8F39A89419DCD9D03E1E606" : "Samples\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RollingSpiderPiloting",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS\/RollingSpiderPiloting\/RollingSpiderPiloting\/RollingSpiderPiloting.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Parrot-Developers\/Samples.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D131187164D7F965C8F39A89419DCD9D03E1E606"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Parrot-Developers\/ARSDKBuildUtils.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E6C1EFC0B639D55313D78A7AFA3D09D623C45EE3"
+    }
+  ]
+}
