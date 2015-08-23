@@ -143,7 +143,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5K-IH-4TR">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5K-IH-4TR">
                                 <rect key="frame" x="250" y="520" width="100" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -295,7 +295,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbv-UK-d8C">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbv-UK-d8C">
                                 <rect key="frame" x="250" y="474" width="100" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -309,7 +309,7 @@
                                     <action selector="flatTrimClick:" destination="h7l-W5-mPq" eventType="touchUpInside" id="ZrW-qB-TzG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUd-PT-Xmy">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUd-PT-Xmy">
                                 <rect key="frame" x="285" y="417" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="rNH-hB-LO4"/>
@@ -339,11 +339,16 @@
                                 <rect key="frame" x="272" y="361" width="56" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3DN-L1-1GE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="KpA-3J-i9m"/>
                                     <constraint firstAttribute="width" constant="38" id="YIZ-DC-p7y"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="56" id="wTv-l6-HhL"/>
                                 </constraints>
                                 <state key="normal" title="Security">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="videoClick:" destination="h7l-W5-mPq" eventType="touchUpInside" id="Pfb-cS-T8e"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -355,6 +360,7 @@
                             <constraint firstItem="F5K-IH-4TR" firstAttribute="top" secondItem="Pbv-UK-d8C" secondAttribute="bottom" constant="16" id="F5X-41-3zb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JwD-Ou-wAn" secondAttribute="trailing" constant="55" id="Gpv-qa-Oud"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Q6h-yu-5vc" secondAttribute="trailing" constant="130" id="Km8-E6-MaP"/>
+                            <constraint firstItem="KUd-PT-Xmy" firstAttribute="top" secondItem="5Ht-w8-jtS" secondAttribute="bottom" constant="26" id="MOu-P6-01a"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dhC-pi-fpM" secondAttribute="trailing" constant="5" id="NpH-VV-zVY"/>
                             <constraint firstAttribute="centerY" secondItem="dhC-pi-fpM" secondAttribute="centerY" id="Q5l-mv-EFw"/>
                             <constraint firstItem="UFP-N1-htC" firstAttribute="top" secondItem="nbi-7z-JqM" secondAttribute="bottom" constant="5" id="R34-rG-PBl"/>
@@ -375,6 +381,7 @@
                             <constraint firstAttribute="centerY" secondItem="1Kb-gy-Fg2" secondAttribute="centerY" constant="-50" id="hht-FR-76Y"/>
                             <constraint firstItem="xX9-x8-Ti2" firstAttribute="top" secondItem="nbi-7z-JqM" secondAttribute="bottom" constant="5" id="hkJ-or-GvU"/>
                             <constraint firstAttribute="centerY" secondItem="NqN-en-PhY" secondAttribute="centerY" id="hza-ft-TGR"/>
+                            <constraint firstAttribute="centerX" secondItem="5Ht-w8-jtS" secondAttribute="centerX" id="jqs-RQ-9AF"/>
                             <constraint firstItem="q36-ZR-DRQ" firstAttribute="top" secondItem="nbi-7z-JqM" secondAttribute="bottom" constant="5" id="m4O-Fh-SHX"/>
                             <constraint firstAttribute="centerY" secondItem="hN0-2e-ah4" secondAttribute="centerY" constant="50" id="m7y-Vq-v7S"/>
                             <constraint firstItem="o6I-ho-za7" firstAttribute="leading" secondItem="f1G-oB-rrQ" secondAttribute="leadingMargin" constant="55" id="mgT-a8-26v"/>
