@@ -501,7 +501,7 @@ static const size_t NUM_OF_COMMANDS_BUFFER_IDS = sizeof(COMMAND_BUFFER_IDS) / si
     return sentStatus;
 }
 
-//video
+//video！！！！Securityモード！！！
 - (BOOL) sendVideostart
 {
     BOOL sentStatus = YES;

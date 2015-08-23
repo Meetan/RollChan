@@ -49,6 +49,7 @@
 @synthesize service = _service;
 @synthesize batteryLabel = _batteryLabel;
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -118,6 +119,11 @@
 - (IBAction)emergencyClick:(id)sender
 {
     [_deviceController sendEmergency];
+    //koko
+    [self.repeatTimer invalidate];
+    self.repeatTimer = nil;
+
+    
 }
 
 - (IBAction)flatTrimClick:(id)sender
@@ -146,19 +152,36 @@
     
 }
 
+//秒間隔でTimerでカメラを撮り続ける
+
 //video
 - (IBAction)videoClick:(id)sender
 {
-    [_deviceController sendVideostart];
-    
-    
+       // NSTimerクラスのクラスメッソッドをコールしてタイマーを起動します。
+        NSTimer *timer =
+        [NSTimer
+         scheduledTimerWithTimeInterval:5.0    // タイマーの間隔を秒単位で指定
+         target:self                     // 第三引数で指定したメッセージの送付先オブジェクト名
+         selector:@selector(eventRepeatTimer:)  // 第一引数で指定した時間が経過した時に送付されるメッセージ名
+        userInfo:nil// タイマー起動中に参照するオブジェクト
+        repeats:YES];                    // タイマーを継続して動作させるかどうかの指定
+        
+        self.repeatTimer = timer;
 }
+
+- (void)eventRepeatTimer:(NSTimer*)theTimer {
+     [_deviceController sendCamerastart];
+}
+
 
 
 
 - (IBAction)landingClick:(id)sender
 {
     [_deviceController sendLanding];
+    //koko
+    [self.repeatTimer invalidate];
+    self.repeatTimer = nil;
 }
 
 //events for gaz:

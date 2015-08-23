@@ -44,6 +44,7 @@
 @property (nonatomic, strong) ARService* service;
 
 @property (nonatomic, strong) IBOutlet UILabel *batteryLabel;
+@property (nonatomic, strong) NSTimer *repeatTimer;
 
 - (IBAction)emergencyClick:(id)sender;
 - (IBAction)flatTrimClick:(id)sender;
@@ -52,6 +53,8 @@
 
 - (IBAction)cameraClick:(id)sender;
 - (IBAction)videoClick:(id)sender;
+
+
 
 - (IBAction)landingClick:(id)sender;
 
