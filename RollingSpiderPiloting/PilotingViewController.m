@@ -160,7 +160,7 @@
        // NSTimerクラスのクラスメッソッドをコールしてタイマーを起動します。
         NSTimer *timer =
         [NSTimer
-         scheduledTimerWithTimeInterval:5.0    // タイマーの間隔を秒単位で指定
+         scheduledTimerWithTimeInterval:3.0    // タイマーの間隔を秒単位で指定
          target:self                     // 第三引数で指定したメッセージの送付先オブジェクト名
          selector:@selector(eventRepeatTimer:)  // 第一引数で指定した時間が経過した時に送付されるメッセージ名
         userInfo:nil// タイマー起動中に参照するオブジェクト
